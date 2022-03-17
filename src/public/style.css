@@ -1,0 +1,83 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 204, 255, 0.596);
+    text-align: center;
+    height: 10%;
+    margin: 0;
+}
+
+.logo_name{
+    font-family: 'Work Sans', sans-serif;
+    color: 0,0,0;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.logo_editor{
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 0em;
+    color: 0,0,0;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+  
+.nav-header, .nav-footer{
+    position: relative;
+    float: left;
+}
+
+#site-header{
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 40px - 40px);
+    min-width: 980px;
+    display: flex;
+    position: relative;
+    height: 100%;
+    
+}
+
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 204, 255, 0.596);
+    text-align: center;
+    height: 10%;
+}
+
+#site-footer{
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 40px - 40px);
+    min-width: 980px;
+    display: flex;
+    position: relative;
+    height: 100%;
+}
