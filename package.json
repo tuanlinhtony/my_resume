@@ -1,0 +1,27 @@
+{
+  "name": "my_resume",
+  "version": "1.0.0",
+  "description": "This is my resume for get the intern job.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "env-cmd -f ./config/dev.env nodemon index.js"
+  },
+  "keywords": [
+    "resume",
+    "cv",
+    "interview"
+  ],
+  "author": "Linh Vu Tuan (tony)",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongodb": "^4.4.1",
+    "mongoose": "^6.2.7"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.15"
+  }
+}
