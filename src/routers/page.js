@@ -10,12 +10,27 @@ router.get('', async (req,res) => {
 })
 
 //Create certificate page
+router.get('/resume', async (req,res) => {
+    res.status(201).render('resume');
+})
+
+//Create certificate page
 router.get('/certificate', async (req,res) => {
     res.status(201).render('certificate');
 })
 
 //Create certificate page
 router.get('/ability', async (req,res) => {
+    res.status(201).render('ability');
+})
+
+//Create login page
+router.get('/login', async (req,res) => {
+    res.status(201).render('ability');
+})
+
+//Create sign up page
+router.get('/signup', async (req,res) => {
     res.status(201).render('ability');
 })
 

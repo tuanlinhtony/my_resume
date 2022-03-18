@@ -1,72 +1,193 @@
-/* UTILITIES */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   }
-   body {
-    font-family: cursive;
-   }
-   a {
-    text-decoration: none;
-   }
-   li {
-    list-style: none;
-   }
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;800&display=swap");
 
-/* NAVBAR STYLING STARTS */
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: teal;
-    color: #fff;
-   }
-   .nav-links a {
-    color: #fff;
-   }
-   /* LOGO */
-   .logo {
-    font-size: 32px;
-   }
-   /* NAVBAR MENU */
-   .menu {
-    display: flex;
-    gap: 1em;
-    font-size: 18px;
-   }
-   .menu li:hover {
-    background-color: #4c9e9e;
-    border-radius: 5px;
-    transition: 0.3s ease;
-   }
-   .menu li {
-    padding: 5px 14px;
-   }
-   /* DROPDOWN MENU */
-   .services {
-    position: relative; 
-   }
-   .dropdown {
-    background-color: rgb(1, 139, 139);
-    padding: 1em 0;
-    position: absolute; /*WITH RESPECT TO PARENT*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    background-color: #f3f3f3;
+    color: rgb(0,0,0);
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Header Responsive Start */
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: rgb(0,0,0);
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: rgb(0,0,0);
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#login, #signup {
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+#login {
+  border: 1px solid rgb(0,0,0);
+}
+
+#signup {
+  border: 1px solid rgb(0,0,0);
+}
+
+#signup a {
+  color: rgb(0,0,0);
+}
+
+#login a {
+  color: rgb(0,0,0);
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: rgb(0,0,0);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
     display: none;
-    border-radius: 8px;
-    top: 35px;
-   }
-   .dropdown li + li {
-    margin-top: 10px;
-   }
-   .dropdown li {
-    padding: 0.5em 1em;
-    width: 8em;
-    text-align: center;
-   }
-   .dropdown li:hover {
-    background-color: #4c9e9e;
-   }
-   .services:hover .dropdown {
+  }
+
+  #hamburger-icon {
     display: block;
-   }
+  }
+}
+
+/* Header Responsive End */
+
+/* Main Content - rounded image avatar -  Start */
+
+.circular--square { 
+    border-top-left-radius: 50% 50%; 
+    border-top-right-radius: 50% 50%; 
+    border-bottom-right-radius: 50% 50%; 
+    border-bottom-left-radius: 50% 50%;
+    
+}
+
+/* Main Content - rounded image avatar -  End */
+
+/* Those circle menu - Start */
+a:link{
+    background-color: transparent;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+
+.circle_resume {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 50%;
+    font-size: 22px;
+    text-align: center;
+    background: #eea302;
+    border: solid 1px #000000;
+}
+.circle_certificate{
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 50%;
+    font-size: 22px;
+    text-align: center;
+    background: #ff3b25;
+    border: solid 1px #000000;
+}
+
+.circle_ability{
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 50%;
+    font-size: 22px;
+    text-align: center;
+    background: #80d8d3;
+    border: solid 1px #000000;
+}
+/* Those circle menu - End */
+
