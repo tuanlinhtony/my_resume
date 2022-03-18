@@ -277,7 +277,20 @@ footer{
   margin-right: auto;
   margin-top: 5px;
   display: grid;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: 23% 23% 23% 23%;
   grid-template-rows: 50%;
+  grid-gap: 10px;
+}
+
+.social_network{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 24px 24px;
+  grid-template-rows: 24px ;
   grid-gap: 10px;
 }
