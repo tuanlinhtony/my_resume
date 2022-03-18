@@ -5,17 +5,7 @@ const router = new express.Router();
 const info = require('../models/my_info');
 //Create home page
 router.get('', async (req,res) => {
-    info.find((err, docs) => {
-        if (!err) {
-            res.render("index", {
-                data: docs
-            });
-        } else {
-            console.log('Failed to retrieve the my info: ' + err);
-        }
-    }
-        
-    );
+
     res.status(201).render('index', {
         phone: '0984 26 3990'
     });
