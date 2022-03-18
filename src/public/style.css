@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Work+Sans:wght@400;600;800&display=swap");
 
 * {
     padding: 0;
@@ -12,6 +12,7 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+
 /* Header Responsive Start */
 header a {
   text-decoration: none;
@@ -22,17 +23,19 @@ header {
   height: 50px;
   display: flex;
   justify-content: space-between;
+  
 }
 
 #brand {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 24px;
   display: flex;
   align-items: center;
 }
 
 #brand a {
   color: rgb(0,0,0);
+  font-family: 'Palette Mosaic', cursive;
 }
 
 ul {
@@ -150,6 +153,14 @@ ul li:hover {
 
 /* Main Content - rounded image avatar -  End */
 
+.main-content{
+  padding: 0 20px;
+  height: 100%;
+  width: 100%;
+  display: block;
+  justify-content: space-between;
+}
+
 /* Those circle menu - Start */
 a:link{
     background-color: transparent;
@@ -191,3 +202,15 @@ a:link{
 }
 /* Those circle menu - End */
 
+/* Footer - Start */
+
+footer{
+  clear: both;
+  position: relative;
+  float: left;
+  padding: 0 20px;
+  height: 50px;
+  display: block;
+  justify-content: space-between;
+  width: 100%;
+}

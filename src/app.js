@@ -3,6 +3,7 @@ const mongoose = require('./db/mongoose');
 const hbs = require('hbs');
 const path = require('path');
 const pageRouter = require('./routers/page');
+const myInfoRouter = require('./routers/my_info');
 
 const app = express();
 
@@ -18,6 +19,9 @@ hbs.registerPartials(partialsPath);
 
 // Setup static directory to serve
 app.use(express.static(publicDirectoryPath));
+
+app.use(express.json())
 app.use(pageRouter);
+app.use(myInfoRouter);
 
 module.exports = app;
