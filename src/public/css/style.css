@@ -277,8 +277,8 @@ footer{
   margin-right: auto;
   margin-top: 5px;
   display: grid;
-  grid-template-columns: 23% 23% 23% 23%;
-  grid-template-rows: 50%;
+  grid-template-columns: calc(98% / 4) calc(98% / 4) calc(98% / 4) calc((98% / 4));
+  grid-template-rows: 60%;
   grid-gap: 10px;
 }
 
@@ -293,4 +293,19 @@ footer{
   grid-template-columns: 24px 24px;
   grid-template-rows: 24px ;
   grid-gap: 10px;
+}
+.email, .follow_me{
+  display: flex;
+  justify-content: center;
+}
+
+.email_details, .follow_me_details{
+  
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.copyright_details{
+  float: right;
+  display:inline-block;
 }

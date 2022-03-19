@@ -4,17 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="../css/certificate-style.css" />
+    
     <title>Linh's Certificate</title>
 </head>
 <body>
     {{>header}}
 
-    <div class="main-content">
-        <h1>Certificate Page</h1>
-    </div>
-    
-    {{>footer}}
+    <div class="certificate-content">
+        <div class="certificate_grid">
+            <div class="title_site">
+                <h1>Certificate</h1>
+            </div>
+            
+            <div class="certificate certificate_01">
+                <div class="left_site">
+                    <h2>JavaScript</h2>
+                    <h2>Basics</h2>
+                </div>
 
+                <div class="right_side">
+                    <div class="row">
+                        <img id="img_certificate" src="../img/javascript_certification.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+             <div class="certificate certificate_02">
+                <div class="left_site">
+                    <h2>C++ for</h2>
+                    <h2>Beginners</h2>
+                </div>
+
+                <div class="right_side">
+                    <div class="row">
+                        <img id="img_certificate" src="../img/cplus_certification.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+             <div class="certificate certificate_03">
+                <div class="left_site">
+                    <h2>The Complete Node.js Developer Course </h2>
+                    <h2>(3rd Edition)</h2>
+                </div>
+
+                <div class="right_side">
+                    <div class="row">
+                        <img id="img_certificate" src="../img/udemy_nodejs_course.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
     
+    </div>
+    {{>footer}}
+    <script src="../script.js"></script>
 </body>
 </html>
