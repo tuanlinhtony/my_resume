@@ -10,6 +10,8 @@ body {
     background-color: #f3f3f3;
     color: rgb(0,0,0);
     font-family: 'Work Sans', sans-serif;
+    
+    
 }
 
 
@@ -142,50 +144,60 @@ ul li:hover {
 /* Header Responsive End */
 
 /* Resume Content Start */
-.resume-content{
-    position: relative;
-    width: 65%;
-    height: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.resume_content{
+  position: relative;
+  display: block;
 }
 
-.resume_grid{
-    position: relative;
-    height: 100%;
-    display: grid;
-    
-    grid-template-rows: 100px 400px 400px 400px;
-    grid-gap: 10px;
+.title_site{
+  margin-top: 5em;
+  margin-bottom: 3em;
 }
 
-.work, .education, .skill{
-    position: relative;
-    background-color: #ffffff;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-gap: 10px;
+.resume_item{
+  position: relative;
+  display: flex;
+  width: 65%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left_site, .left_row{
+  width: 40%;
+  height: 100%;
+  display: block;
+  float: left;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.right_side, .right_row{
+  float: right;
+  width: 60%;
+  height: 100%;
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .row{
-    position: relative;
-    display: grid;
-    grid-template-columns: 20% 80%;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
+
+
 /* Resume Content End */
 
 /* Footer - Start */
 
 footer{
-    clear: both;
     position: relative;
-    float: left;
     padding: 0 20px;
-    height: 9vh;
     width: 100%;
     display: block;
-    justify-content: space-between;
     
   }
   

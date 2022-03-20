@@ -16,63 +16,36 @@
 <body>
     {{>header}}
 
-    <div class="resume-content">
+    <div class="resume_content">
         <div class="resume_grid">
-            <div class="title_site">
+            <div class="resume_item title_site">
                 <h1>Resume</h1>
             </div>
-            
-            
-            
-            <div class="work">
-                
+            <hr>
+            <div class="resume_item work">
                 <div class="left_site">
                     <h2>Work</h2>
                     <h2>Experience</h2>
                 </div>
-
                 <div class="right_side">
+                    {{#each job_timeline}}
                     <div class="row">
                         <div class="left_row">
-                            <p>2019 - Present</p>
+                            <p>{{lookup ../job_timeline @index}}</p>
                         </div>
-                        <div class="right_row">
-                            <h3>Editor</h3>
-                            <p>
-                                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
-                            </p>
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="left_row">
-                            <p>2018 - 2020</p>
-                        </div>
                         <div class="right_row">
-                            <h3>Writer at Large</h3>
+                            <h3>{{lookup ../job_position @index}}</h3>
                             <p>
-                                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+                                {{lookup ../job_details @index}}
                             </p>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="left_row">
-                            <p>2017 - 2018</p>
-                        </div>
-                        <div class="right_row">
-                            <h3>Intern</h3>
-                            <p>
-                                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
-                            </p>
-                        </div>
-                    </div>
+                    {{/each}} 
                 </div>
             </div>
-            
-            
-            
-            <div class="education">
+            <hr>
+            <div class="resume_item education">
                  
                 <div class="left_site">
                     <h2>Education</h2>
@@ -80,35 +53,23 @@
                 </div>
 
                 <div class="right_side">
+                    {{#each edu_timeline}}
                     <div class="row">
                         <div class="left_row">
-                            <p>2015 - 2017</p>
+                            <p>{{lookup ../edu_timeline @index}}</p>
                         </div>
                         <div class="right_row">
-                            <h3>Establishment Name | Master’s Degree</h3>
+                            <h3>{{lookup ../edu_major @index}}</h3>
                             <p>
-                                I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.
+                                {{lookup ../edu_details @index}}
                             </p>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="left_row">
-                            <p>2012 - 2015</p>
-                        </div>
-                        <div class="right_row">
-                            <h3>Establishment Name | Bachelor's Degree</h3>
-                            <p>
-                                I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.
-                            </p>
-                        </div>
-                    </div>
+                    {{/each}} 
                 </div>
             </div>
-
-            
-            
-            <div class="skill">
+            <hr>
+            <div class="resume_item skill">
                  
                 <div class="left_site">
                     <h2>Skills</h2>
@@ -116,29 +77,21 @@
                 </div>
 
                 <div class="right_side">
+                    {{#each skill_status}}
                     <div class="row">
+                        
                         <div class="left_row">
-                            <p>2015 - 2017</p>
+                            <p>{{lookup ../skill_status @index}}</p>
                         </div>
                         <div class="right_row">
-                            <h3>Establishment Name | Master’s Degree</h3>
+                            <h3>{{lookup ../skill_title @index}}</h3>
                             <p>
-                                I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.
+                                {{lookup ../skill_details @index}}
                             </p>
                         </div>
+                        
                     </div>
-
-                    <div class="row">
-                        <div class="left_row">
-                            <p>2012 - 2015</p>
-                        </div>
-                        <div class="right_row">
-                            <h3>Establishment Name | Bachelor's Degree</h3>
-                            <p>
-                                I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.
-                            </p>
-                        </div>
-                    </div>
+                    {{/each}} 
                 </div>
             </div>
         </div>
