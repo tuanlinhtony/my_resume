@@ -56,7 +56,7 @@ router.get('/ability', async (req,res) => {
 
 //Create login page
 router.get('/login', async (req,res) => {
-    res.status(201).render('ability');
+    res.status(201).render('login');
 })
 
 //Create sign up page
