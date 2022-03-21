@@ -73,12 +73,32 @@ router.get('/resume', async (req,res) => {
 
 //Create certificate page
 router.get('/certificate', async (req,res) => {
-    res.status(201).render('certificate');
+    Info.find((err, docs) => {
+        if (!err) {
+            res.status(201).render('certificate', {
+               phone: docs[0].phone,
+               email: docs[0].email
+               
+            });
+        } else {
+            console.log('Failed to retrieve the Course List: ' + err);
+        }
+    });
 })
 
 //Create certificate page
 router.get('/ability', async (req,res) => {
-    res.status(201).render('ability');
+    Info.find((err, docs) => {
+        if (!err) {
+            res.status(201).render('ability', {
+               phone: docs[0].phone,
+               email: docs[0].email
+               
+            });
+        } else {
+            console.log('Failed to retrieve the Course List: ' + err);
+        }
+    });
 })
 
 //Create login page

@@ -5,6 +5,7 @@ const path = require('path');
 const pageRouter = require('./routers/page');
 const myInfoRouter = require('./routers/my_info');
 const resumeRouter = require('./routers/resume');
+const userRouter = require('./routers/user');
 
 const app = express();
 
@@ -25,6 +26,7 @@ app.use(express.json())
 app.use(pageRouter);
 app.use(myInfoRouter);
 app.use(resumeRouter);
+app.use(userRouter);
 
 
 module.exports = app;
