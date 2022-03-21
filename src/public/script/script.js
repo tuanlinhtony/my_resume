@@ -5,3 +5,4 @@ function toggleMobileMenu(menu) {
     var x = document.querySelectorAll(".bar");
     console.log(x);
 }
+

@@ -34,6 +34,10 @@ const infoSchema = new mongoose.Schema({
     email:{
         type: String,
         required: true
+    },
+    bio:{
+        type: String,
+        required: true
     }
 },
 {
