@@ -1,0 +1,21 @@
+1. Express JS
+2. Restful API
+3. Các kiểu biến, so sánh let var
+4. driver connet db
+5. jwt 
+6. md5
+7. oop
+8. cookie
+9. session
+10. json
+11. design db(chuẩn hoá)
+12. một vài giải thuật đưa ra để giải quyết bài toán thức tế như sắp xếp chuỗi
+
+1. What is Node.js? Where can you use it?
+Node js is an open-source, which is cross-platform Javascript runtime environment and library. It was created to run web applications
+outside the client's browser. It is used to create server-side web app. Node js perfect for data-intensive app as it uses an asynchronous,
+event-driven model. You can use I/O intensive web app like video streaming sites. You can also use it for developing: Real-time web app,
+Network app, General-purpose app, and Distributed systems.
+
+2. Why use Node JS
+Node Js makes building scalable network
